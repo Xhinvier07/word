@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/word/style.css">
-    <link rel="icon" href="/word/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.png">
     <title>WORD | SHIN</title>
 </head>
 <body>
     <div class="container">
         <h1>Word Converter </h1>
+        <textarea id="input" placeholder="Enter your text here"></textarea>
+        <div class ="row">
+            <button onclick="countVowels()">Count Vowels</button>
+            <button onclick="countConsonants()">Count Consonants</button>
+        </div>
+        <div class ="row">
+            <button onclick="countWords()">Count Words</button>
+            <button onclick="countCharacters()">Count Characters</button>
+        </div>
+        <div class ="row">
+            <button onclick="reverseText()">Reverse Text</button>
+            <button onclick="capitalizeText()">Capitalize Text</button>
+        </div>
+        <div class ="row">
+            <button onclick="smallText()">Small Text</button>
+            <button onclick="clearText()">Clear Text</button>
+        </div>
 
 
+        <p id="result">Result</p>
 
     </div>
-
-
-
-
     <script src="/word/script.js"></script>
 </body>
 </html>

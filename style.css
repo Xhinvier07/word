@@ -1,0 +1,87 @@
+body{
+    font-family: Monteserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #052f4f, #04253e);
+}
+
+.container{
+    background-color: rgba(10, 87, 129, 0.9);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 5px 5px rgba(0, 48, 74, 0.8);
+    border-radius: 14px;
+    padding: 20px;
+    display : flex;
+    flex-direction: column;
+    animation: glow 1.5s infinite alternate;
+}
+
+
+@keyframes glow{
+    from {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+    }
+    to {
+        box-shadow: 
+        0 0px 10px #05334d,
+        0 0px 20px #ffffff,
+        0 0px 30px#b0b7b9;
+    }
+
+}
+
+
+h1{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+textarea{
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0, 48, 74, 0.5);
+    background-color: rgba(255, 255, 255, 0.96);
+    color: #002e48;
+    font-family: Montserrat, "san-serif";
+    font-size: 14px;
+    resize: none;
+    animation: slide 1s ease;
+}
+
+ 
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #004166;
+    width: 200px;
+    outline: none;
+    background-color: #002e48;
+
+    color: #ffffff;
+    font-family: Montserrat, "san-serif";
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
